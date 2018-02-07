@@ -8,6 +8,7 @@ Before you start storing your passwords,
   <h2>Instructions for running</h2>
   <li>Clone this repo</li>
   <li>Run npm install</li>
+  <li>Run npm start</li>
   <li>Your data is stored locally in .localpass folder in the current directory</li>
 </ul>
 
