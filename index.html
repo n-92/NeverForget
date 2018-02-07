@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Never Forget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#menu-toggle">Never Forget</a>
+                </li>
+                <li>
+                   <a href="#create">Create</a>
+                </li>
+                <li>
+                    <a href="#show-tags">Tags</a>
+                </li>
+                <li>
+                    <a href="#settings">Settings</a>
+                </li>
+            
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid offset-bottom">
+
+                <a href="#menu-toggle" class="btn btn-info btn-lg" id="menu-toggle">
+                 More..</a>
+                <hr/>
+
+                <div class="search-box">
+                    <input id="tag-search" type="text" class="form-control" placeholder="Tag" /> 
+                </div>
+                <div class="col-md-12 text-center"> 
+                    <button id="search-button" name="search-button" class="btn btn-primary">Search</button> 
+                </div>
+                <hr/>
+                <div class="container-fluid search-results"> 
+                    
+                </div>
+
+            </div> 
+
+            <div class="container-fluid offset-bottom" >
+                <form id="create">
+                      <div class="row">
+                        <div class="col">
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" id="tag" placeholder="tag">
+                        </div>
+                        <div class="col">
+                          <button id="save" type="submit" class="btn btn-primary">Save</button>
+                        </div>
+
+                      </div>
+                </form>
+            </div> 
+
+             <div class="container-fluid offset-bottom">
+                <div class="col" id="show-tags">
+                    <button id="showtags"  class="btn btn-primary">Show tags</button> 
+                    <hr/>
+                    <div class="container tags-result">
+                        
+                    </div>
+                </div>
+
+            </div> 
+
+            <div class="container-fluid offset-bottom">
+                <div class="row">
+                    <div class="col" id="settings">
+                        <input type="password"  class="input" id="secretkey" placeholder="Secret Key">    
+                        <button id="showkey"  class="btn btn-primary">Show Key</button>            
+                        <button id="savekey"  class="btn btn-primary">Save Key</button> 
+                    </div>
+                    
+                </div>
+                
+            
+            </div>
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+        // toggle password visibility
+    $('#showkey').on('click', function() {
+        alert($('#secretkey').val());
+    });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

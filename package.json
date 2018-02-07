@@ -1,0 +1,17 @@
+{
+  "name": "NeverForget",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "electron": "~1.7.9",
+    "electron-rebuild": "~1.6.0",
+    "level": "^2.0.1",
+    "random-string": "^0.2.0"
+  },
+  "scripts": {
+    "postinstall": "electron-rebuild -w leveldown",
+    "start": "electron ."
+  },
+  "main": "main.js"
+}
