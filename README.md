@@ -1,5 +1,6 @@
 #Making password storage simple
-Created with <3 by Naing 
+
+#Created with <3 by Naing 
 
 An open source application written to store your passwords locally encrypted.
 Before you start storing your passwords,
